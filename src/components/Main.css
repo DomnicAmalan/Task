@@ -1,0 +1,61 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+@font-face {
+    font-family: 'Destroy';
+    src: url(../fonts/DESTROY_.TTF) format('ttf');
+}
+
+.playarea-container {
+    float: right;
+    width: 80%;
+    height: auto;
+    background-color: ghostwhite ;
+    text-align: center;
+    height: 100%;
+  }
+.components-list-container {
+    float: left;
+    width: 20%;
+    height: auto;
+    background-color: whitesmoke ;
+    text-align: center;
+    height: 100%;
+}
+
+
+.playarea {
+    border-top-width: 0.5px;
+    border-top-color: black;
+    border-top-style: groove ;
+    background-color: ghostwhite;
+    height: 100%;
+    position: absolute;
+    width: 80%;
+}
+
+.heading {
+    text-align: center; 
+}
+.components-list {
+    border-top-width: 0.5px;
+    border-top-color: black;
+    border-top-style: groove ;
+    background-color: whitesmoke;
+    height: 40%;
+    position: absolute;
+    width: 20%;
+    border-right-style: solid ;
+    border-right-width: 3px;
+    border-right-color: black;
+    overflow-y: auto;
+}
+
+.main:after {
+    display: flex;
+    overflow:hidden; 
+}
+
+h1 {
+    font-family: 'Destroy';
+}
