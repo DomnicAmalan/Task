@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './input.css'
-import PropTypes from 'prop-types';
+import { PostionContext } from '../context/maincontext'
 
 const Input = (props) => {
 
-    const [counter, setCounter] = useState(0)
-
+    const  {  position, counter }  = useContext(PostionContext);
     useEffect(() => {
         let element = document.getElementById("input-" + counter)
-        
-        element.style["top"] = props.y+"px"
-        element.style["left"] = props.x+"px"
-        setCounter(counter+1)
+        element.style["top"] = position.y+"px"
+        element.style["left"] = position.x+"px"
     }, [])
 
 

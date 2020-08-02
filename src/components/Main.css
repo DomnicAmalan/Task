@@ -14,7 +14,7 @@
 
 .playarea-container {
     float: right;
-    width: 80%;
+    width: 100%;
     height: auto;
     background-color: ghostwhite ;
     text-align: center;
@@ -23,10 +23,11 @@
 .components-list-container {
     background-color: whitesmoke ;
     text-align: center;
-    height: 80%;
-    width: 20%;
     justify-self: center;
     align-self: center;
+    position: absolute;
+    width: 20%;
+    overflow-y: auto;
 }
 
 .playarea {
@@ -36,9 +37,8 @@
     background-color: ghostwhite;
     height: 80%;
     position: absolute;
-    width: 80%;
+    width: 100%;
     overflow-y: auto;
-    
 }
 
 .heading {
@@ -53,17 +53,20 @@
 }
 
 .components-list {
-    height: 80%;
-    border-top-width: 0.5px;
-    border-top-color: black;
-    border-top-style: groove ;
-    background-color: whitesmoke;
-    border-right-style: solid ;
-    border-right-width: 0.5px;
-    border-right-color: black;
     overflow-y: auto;
-   
+    position: relative;
   }
+
+.component-element-list {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    background-color: azure;
+}
+.list-components{
+    position: relative;
+}
 
 .main:after {
     display: flex;
