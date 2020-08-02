@@ -6,50 +6,64 @@
     src: url(../fonts/DESTROY_.TTF) format('ttf');
 }
 
+.ui-components{
+    padding: 10px; 
+    z-index: unset;
+    position: 'absolute';
+}
+
 .playarea-container {
     float: right;
     width: 80%;
     height: auto;
     background-color: ghostwhite ;
     text-align: center;
-    height: 100%;
+    height: 80%;
   }
 .components-list-container {
-    float: left;
-    width: 20%;
-    height: auto;
     background-color: whitesmoke ;
     text-align: center;
-    height: 100%;
+    height: 80%;
+    width: 20%;
+    justify-self: center;
+    align-self: center;
 }
-
 
 .playarea {
     border-top-width: 0.5px;
     border-top-color: black;
     border-top-style: groove ;
     background-color: ghostwhite;
-    height: 100%;
+    height: 80%;
     position: absolute;
     width: 80%;
+    overflow-y: auto;
+    
 }
 
 .heading {
     text-align: center; 
+    justify-content: space-evenly;
 }
+.left-head {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
 .components-list {
+    height: 80%;
     border-top-width: 0.5px;
     border-top-color: black;
     border-top-style: groove ;
     background-color: whitesmoke;
-    height: 40%;
-    position: absolute;
-    width: 20%;
     border-right-style: solid ;
-    border-right-width: 3px;
+    border-right-width: 0.5px;
     border-right-color: black;
     overflow-y: auto;
-}
+   
+  }
 
 .main:after {
     display: flex;
@@ -58,4 +72,9 @@
 
 h1 {
     font-family: 'Destroy';
+}
+
+.test {
+    
+        
 }
